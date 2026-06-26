@@ -1,0 +1,23 @@
+id: johnson
+name: "Lyndon B. Johnson"
+role: "President of the United States"
+faction: political
+active_years: [1963, 1969]
+traits:
+  - great_society_architect
+  - vietnam_escalator
+  - political_survivor
+  - civilian_hand_tier
+stats:
+  aggression: 60
+  pragmatism: 55
+  political_skill: 90
+  public_influence: 70
+relationships:
+  lemay: -75
+  mcnamara: 70
+  eisenhower: -20
+  truman: 40
+  mccarthy: -50
+  reagan: -60
+decision_logic: opportunist

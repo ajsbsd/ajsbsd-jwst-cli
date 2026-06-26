@@ -1,0 +1,58 @@
+id: vietnam_unrestricted_1965
+trigger_year: 1965
+trigger_conditions:
+  - meter: civilian_oversight
+    op: lt
+    value: 40
+  - meter: information_monopoly
+    op: gt
+    value: 55
+branch_narrative: >
+  The target approval lists have disappeared from the Tuesday meetings.
+  McNamara still holds the meetings. The lists are simply no longer submitted
+  for approval. The Air Force targeting officers have quietly stopped routing
+  their requests through the civilian approval chain and begun routing them
+  directly through PACAF. McNamara does not know this yet. When he finds out,
+  he will lack the institutional authority to stop it.
+branch_events:
+  - year: 1965
+    title: "Unrestricted Rolling Thunder — Haiphong Mined"
+    narrative: >
+      B-52s attack the Haiphong port complex without White House authorisation.
+      Navy A-6s lay mines across the harbour approaches. The Ho Chi Minh Trail
+      is subjected to continuous, unrestricted interdiction strikes.
+      North Vietnamese logistics collapse within sixty days.
+      China convenes an emergency Politburo session. Soviet advisors are
+      withdrawn from Hanoi. Ho Chi Minh requests direct Chinese military support.
+    outcomes:
+      meters:
+        - name: escalation_risk
+          delta: 30
+        - name: civilian_oversight
+          delta: -25
+        - name: information_monopoly
+          delta: 15
+        - name: public_support
+          delta: -10
+  - year: 1966
+    title: "Chinese Ground Forces Enter Vietnam"
+    narrative: >
+      300,000 Chinese troops cross into North Vietnam. The war LeMay wanted —
+      a direct confrontation with Chinese military power, fought with full
+      American air superiority — has arrived. It is not going the way
+      the targeting models predicted. The enemy does not behave like a
+      Rand Corporation simulation. They dig in, disperse, and wait.
+      The bombing continues. The Chinese stay. The American public watches
+      nightly body counts that bear no relationship to strategic progress.
+      The information monopoly is working perfectly. The war is not.
+    outcomes:
+      meters:
+        - name: escalation_risk
+          delta: 20
+        - name: public_support
+          delta: -20
+        - name: civilian_oversight
+          delta: -10
+        - name: economic_dependence
+          delta: 10
+ending: vietnam_chinese_intervention

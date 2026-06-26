@@ -1,0 +1,23 @@
+id: reagan
+name: "Ronald W. Reagan"
+role: "President of the United States"
+faction: political
+active_years: [1981, 1989]
+traits:
+  - cold_warrior
+  - military_buildup_champion
+  - sdi_visionary
+  - anti_detente
+  - economic_hawk
+stats:
+  aggression: 70
+  pragmatism: 60
+  political_skill: 80
+  public_influence: 90
+relationships:
+  lemay: 50
+  mcnamara: -70
+  eisenhower: 40
+  johnson: -60
+  truman: 20
+decision_logic: hawk

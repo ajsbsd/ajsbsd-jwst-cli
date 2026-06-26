@@ -1,0 +1,22 @@
+id: mccarthy
+name: "Senator Joseph R. McCarthy"
+role: "U.S. Senator (R-WI), Chairman, Senate Permanent Subcommittee on Investigations"
+faction: political
+active_years: [1950, 1957]
+traits:
+  - demagogue
+  - red_scare_architect
+  - loyalty_board_wielder
+  - self_destructive
+stats:
+  aggression: 90
+  pragmatism: 25
+  political_skill: 60
+  public_influence: 85
+relationships:
+  truman: -85
+  eisenhower: -30
+  lemay: 20
+  mcnamara: -40
+  johnson: -50
+decision_logic: demagogue

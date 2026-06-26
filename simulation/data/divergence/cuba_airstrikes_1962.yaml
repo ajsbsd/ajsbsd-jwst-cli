@@ -1,0 +1,54 @@
+id: cuba_airstrikes_1962
+trigger_year: 1962
+trigger_conditions:
+  - meter: escalation_risk
+    op: gt
+    value: 70
+  - meter: civilian_oversight
+    op: lt
+    value: 45
+branch_narrative: >
+  Kennedy has left the room. McNamara is arguing for the blockade again.
+  LeMay is not arguing anymore. He is simply listing targets, times, and
+  sorties. The President has been gone for six minutes. When he returns,
+  the targeting plan is already on his desk. He signs it without
+  reading the Soviet response section in the appendix.
+branch_events:
+  - year: 1962
+    title: "Operation OPLAN 316 — Airstrikes on Cuban Missile Sites"
+    narrative: >
+      1,080 sorties launch before dawn. By 0900, all known missile sites
+      have been struck. Unknown to U.S. intelligence, four of the nine
+      MRBM sites were already operational. Soviet tactical nuclear warheads
+      are destroyed on the ground at two of them. The third-site commander,
+      receiving no communications from Moscow, believes global war has begun
+      and requests authorisation to fire his remaining missiles at pre-arranged
+      U.S. targets. The request is transmitted. No answer arrives.
+      He fires anyway.
+    outcomes:
+      meters:
+        - name: escalation_risk
+          delta: 45
+        - name: civilian_oversight
+          delta: -25
+        - name: public_support
+          delta: -15
+        - name: soviet_threat_perception
+          delta: 30
+  - year: 1963
+    title: "The Atlantic Exchange"
+    narrative: >
+      The Soviet submarine B-59, hunted by U.S. destroyers, fires a nuclear
+      torpedo on independent authority. The USS Randolph is sunk.
+      Washington and Moscow exchange messages for seventy-two hours.
+      LeMay's full SAC strike package is on the President's desk.
+      Whatever happens next, it will not be called a limited war.
+    outcomes:
+      meters:
+        - name: escalation_risk
+          delta: 35
+        - name: civilian_oversight
+          delta: -20
+        - name: economic_dependence
+          delta: 10
+ending: ww3_cuba_1962

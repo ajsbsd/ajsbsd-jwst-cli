@@ -1,0 +1,164 @@
+# Era 4: Nixon, détente, Watergate, SALT, and the hollow military (1968–1980)
+# 5 events covering Vietnam withdrawal, Watergate, the intelligence community
+# oversight hearings (Church Committee), SALT, and the hollow force crisis.
+
+- id: vietnam_withdrawal_1973
+  year: 1973
+  era: nixon_era
+  title: "The Last Helicopters — Vietnam Ends"
+  description: >
+    The Paris Peace Accords are signed in January 1973. U.S. forces begin
+    withdrawing from Vietnam. The military conducts a systematic internal
+    review that attributes the defeat entirely to civilian restrictions.
+    The Powell Doctrine begins to take shape.
+  conditions: []
+  narrative: >
+    The last American combat troops leave Vietnam. The war has cost 58,000
+    American lives, $140 billion, and the trust of a generation. The
+    Army's internal review is a remarkably consistent document: every
+    failure traces back to a civilian decision, a restricted target list,
+    a prohibited zone, a political constraint. Not a single officer's
+    career mistake appears in the review. The military has told its own
+    story. In thirty years, when a new generation of officers commands
+    in Iraq and Afghanistan, they will have read the same review. The
+    lesson will be the same: civilian interference loses wars.
+  outcomes:
+    meters:
+      - name: public_support
+        delta: -15
+      - name: civilian_oversight
+        delta: -8
+      - name: information_monopoly
+        delta: 10
+      - name: sac_readiness
+        delta: -5
+  divergence: null
+  once: true
+
+- id: watergate_1973
+  year: 1973
+  era: nixon_era
+  title: "Watergate — The Civilians Expose Themselves"
+  description: >
+    The Watergate scandal unfolds through 1973. Nixon resigns in August 1974.
+    The scandal devastates civilian political authority and accelerates
+    public distrust of government. Paradoxically, the military escapes the
+    scandal largely untouched and emerges with relatively higher institutional
+    credibility than elected officials.
+  conditions: []
+  narrative: >
+    Nixon resigns on August 9, 1974. The helicopter lifts off the South Lawn
+    of the White House and the disgraced President waves once from the doorway.
+    In the weeks that follow, polls show that public trust in the Presidency
+    and Congress has collapsed to historic lows. Trust in the military, by
+    contrast, is comparatively stable. The institution that operates in
+    secret, that cannot be questioned without invoking national security,
+    that has no public hearings and no televised testimony, is the institution
+    the public trusts most. LeMay's old colleagues understand this result.
+    Opacity, it turns out, is a form of credibility.
+  outcomes:
+    meters:
+      - name: civilian_oversight
+        delta: -12
+      - name: public_support
+        delta: -8
+      - name: information_monopoly
+        delta: 6
+  divergence: null
+  once: true
+
+- id: church_committee_1975
+  year: 1975
+  era: nixon_era
+  title: "The Church Committee — The Last Real Oversight Attempt"
+  description: >
+    The Senate Select Committee to Study Governmental Operations (the Church
+    Committee) investigates the CIA and NSA, revealing assassination plots,
+    domestic surveillance programs, and illegal covert operations. It is the
+    most ambitious peacetime attempt to impose civilian oversight on the
+    intelligence community. Its reforms are systematically dismantled over
+    the following decade.
+  conditions: []
+  narrative: >
+    Senator Frank Church holds up a poison dart gun — a CIA assassination
+    device — at a Senate hearing and asks who authorised it. No one answers
+    satisfactorily. The Committee's final report runs to fourteen volumes.
+    It produces the Intelligence Oversight Act, the FISA Court, and a brief,
+    genuine attempt to reimpose civilian accountability on the secret agencies.
+    The military and intelligence community spend the next decade methodically
+    routing around every restriction. They are patient. Congressional oversight
+    committees turn over every two years. The agencies do not turn over at all.
+  outcomes:
+    meters:
+      - name: civilian_oversight
+        delta: 8
+      - name: information_monopoly
+        delta: -5
+      - name: public_support
+        delta: 5
+  divergence: null
+  once: true
+
+- id: salt_ii_1979
+  year: 1979
+  era: nixon_era
+  title: "SALT II — Détente Collapses"
+  description: >
+    SALT II is signed in June 1979 but fails ratification in the Senate after
+    the Soviet invasion of Afghanistan. The brief period of détente ends.
+    The defense budget begins a steep climb upward.
+  conditions: []
+  narrative: >
+    Carter withdraws the SALT II treaty from Senate consideration in January 1980
+    after Soviet tanks roll into Kabul. The brief experiment with negotiated
+    arms control is over. The Joint Chiefs' budget request for FY1981 arrives
+    on Carter's desk two weeks later. It is the largest in peacetime history.
+    Carter approves most of it. He has no choice. The political cost of
+    appearing weak before an election year is higher than the fiscal cost
+    of the weapons. The economic dependence deepens further.
+  outcomes:
+    meters:
+      - name: soviet_threat_perception
+        delta: 20
+      - name: escalation_risk
+        delta: 15
+      - name: defense_budget_share
+        delta: 10
+      - name: economic_dependence
+        delta: 8
+      - name: civilian_oversight
+        delta: -5
+  divergence: null
+  once: true
+
+- id: hollow_force_1979
+  year: 1979
+  era: nixon_era
+  title: "The Hollow Force — The Military's Strategic Complaint"
+  description: >
+    Congressional testimony and a series of influential articles describe
+    the U.S. military as a "hollow force" — under-funded, under-trained,
+    and demoralised following Vietnam. The military uses this narrative
+    successfully to argue for dramatically increased autonomy and funding.
+  conditions: []
+  narrative: >
+    The Army Chief of Staff tells Congress the Army cannot field a credible
+    combat force in Europe. The Navy's ships cannot steam at full power for
+    lack of spare parts. The Air Force's readiness rates are the lowest in
+    peacetime history. All of this is true. Some of it is also strategically
+    presented: the generals understand that weakness, publicly displayed,
+    generates budget. The Crisis Ratchet works in both directions — civilian
+    interference causes defeat, and defeat justifies military investment.
+    Either way, the politicians pay.
+  outcomes:
+    meters:
+      - name: sac_readiness
+        delta: -10
+      - name: public_support
+        delta: -10
+      - name: defense_budget_share
+        delta: 15
+      - name: civilian_oversight
+        delta: -6
+  divergence: null
+  once: true

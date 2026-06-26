@@ -1,0 +1,22 @@
+id: eisenhower
+name: "Dwight D. Eisenhower"
+role: "President of the United States, former Supreme Allied Commander"
+faction: political
+active_years: [1953, 1961]
+traits:
+  - mic_warning_issuer
+  - cold_warrior
+  - balanced_budget_hawk
+  - military_insider_turned_skeptic
+stats:
+  aggression: 45
+  pragmatism: 80
+  political_skill: 85
+  public_influence: 90
+relationships:
+  lemay: 35
+  mccarthy: -60
+  mcnamara: 0
+  truman: 30
+  johnson: -20
+decision_logic: pragmatist

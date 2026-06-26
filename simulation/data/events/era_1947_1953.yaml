@@ -1,0 +1,227 @@
+# Era 1: Birth of the U.S. Air Force and early Cold War (1947–1953)
+# 7 events covering the founding of the USAF, Berlin Airlift, SAC buildout,
+# Soviet nuclear test, Korea, and the Milo Radulovich case.
+
+- id: usaf_independence_1947
+  year: 1947
+  era: birth_of_usaf
+  title: "The Air Force Becomes Independent"
+  description: >
+    The National Security Act of 1947 is signed on September 18, creating
+    the United States Air Force as a separate military branch equal to the
+    Army and Navy. The Army and Navy are hostile; the new service is fragile,
+    under-resourced, and immediately in a budget war.
+  conditions: []
+  narrative: >
+    On September 18, 1947, the United States Air Force is born. General
+    Spaatz pins on his new uniform and makes no speech. There is no fanfare.
+    The Army and Navy both believe the experiment will fail inside a decade.
+    They may be right — but they are not counting on what walks in the door
+    at Offutt Air Force Base one year later.
+  outcomes:
+    meters:
+      - name: sac_readiness
+        delta: -5
+      - name: defense_budget_share
+        delta: 5
+  divergence: null
+  once: true
+
+- id: berlin_airlift_1948
+  year: 1948
+  era: birth_of_usaf
+  title: "The Berlin Airlift"
+  description: >
+    The Soviets blockade West Berlin. LeMay, commanding USAFE, is tasked
+    with organising a logistics operation he privately considers an act of
+    weakness. He executes it anyway with characteristic ruthlessness, imposing
+    rigid maintenance and flight schedules that transform chaos into precision.
+  conditions:
+    - figure_active: lemay
+  narrative: >
+    LeMay does not believe in this operation. He believes a single B-29 flying
+    low and slow over Soviet positions at the corridor boundary would end the
+    blockade in forty-eight hours. He is almost certainly right. Instead, he
+    is ordered to fly coal and powdered milk into Tempelhof at three-minute
+    intervals. He does it perfectly. The world watches. The Air Force proves
+    it can do something other than bomb cities. LeMay files this lesson away
+    and immediately forgets it.
+  outcomes:
+    meters:
+      - name: public_support
+        delta: 8
+      - name: civilian_oversight
+        delta: 3
+      - name: sac_readiness
+        delta: 5
+  divergence: null
+  once: true
+
+- id: sac_takeover_1948
+  year: 1948
+  era: birth_of_usaf
+  title: "LeMay Takes Command of SAC"
+  description: >
+    General Curtis LeMay assumes command of the Strategic Air Command.
+    He finds it in shambles — broken planes, low morale, poor readiness.
+    He immediately begins transforming it into the world's most lethal
+    nuclear strike force.
+  conditions:
+    - figure_active: lemay
+    - meter: sac_readiness
+      op: lt
+      value: 40
+  narrative: >
+    LeMay walks into SAC headquarters and immediately fires three base
+    commanders before dinner. He orders a no-notice simulated bombing run
+    on Dayton, Ohio. Every single crew fails. Every single aircraft misses
+    the target by miles. LeMay is not surprised. He is already writing the
+    regulations that will make failure this catastrophic impossible.
+    "This outfit is a disgrace," he tells his staff. "I am going to fix it."
+  outcomes:
+    meters:
+      - name: sac_readiness
+        delta: 20
+      - name: civilian_oversight
+        delta: -5
+      - name: defense_budget_share
+        delta: 8
+    figure_stat_changes:
+      - figure: lemay
+        stat: public_influence
+        delta: 10
+  divergence: null
+  once: true
+
+- id: soviet_atomic_test_1949
+  year: 1949
+  era: birth_of_usaf
+  title: "The Soviets Test the Bomb"
+  description: >
+    On August 29, 1949, the Soviet Union detonates its first atomic bomb,
+    codenamed Joe-1 by U.S. intelligence. The American public had been told
+    the Soviets were years away. The political shockwave is immediate.
+  conditions: []
+  narrative: >
+    The detection aircraft returns to Alaska with filter papers coated in
+    fallout particles from the Kazakh steppe. President Truman reads the
+    analysis report three times before he believes it. McCarthy's office
+    receives a copy the same morning. By afternoon, he is drafting a speech
+    about traitors in the State Department. In the Pentagon, LeMay reads
+    his copy and smiles for the first time in months. He has been telling
+    anyone who would listen. Now they will listen.
+  outcomes:
+    meters:
+      - name: soviet_threat_perception
+        delta: 30
+      - name: escalation_risk
+        delta: 15
+      - name: defense_budget_share
+        delta: 12
+      - name: civilian_oversight
+        delta: -8
+  divergence: null
+  once: true
+
+- id: korea_war_begins_1950
+  year: 1950
+  era: birth_of_usaf
+  title: "North Korea Invades"
+  description: >
+    On June 25, 1950, North Korean forces cross the 38th parallel in strength.
+    The U.S. is caught flat-footed. LeMay immediately advocates using nuclear
+    weapons to destroy North Korean supply lines and Chinese staging areas.
+    Truman refuses. The war begins as the first test of the policy of restraint.
+  conditions:
+    - figure_active: truman
+  narrative: >
+    The call comes at 9:26 PM on a Saturday. Within seventy-two hours, LeMay
+    has a nuclear targeting plan for six North Korean cities on Truman's desk.
+    Truman reads it, sets it face-down, and asks for conventional options.
+    LeMay is informed he will not be using atomic weapons in Korea. He does
+    not argue with the Commander-in-Chief. He simply notes the decision in
+    his personal log and moves on. He will note many such decisions.
+    The precedent is now established: the politician overrules the general.
+    The Crisis Ratchet clicks once.
+  outcomes:
+    meters:
+      - name: escalation_risk
+        delta: 20
+      - name: civilian_oversight
+        delta: -6
+      - name: soviet_threat_perception
+        delta: 15
+      - name: public_support
+        delta: -5
+    figure_stat_changes:
+      - figure: lemay
+        stat: aggression
+        delta: 5
+  divergence: korea_nuclear_1951
+  once: true
+
+- id: mccarthy_rises_1950
+  year: 1950
+  era: birth_of_usaf
+  title: "McCarthy's Wheeling Speech"
+  description: >
+    Senator Joseph McCarthy delivers his infamous speech in Wheeling, West
+    Virginia, claiming to hold a list of 205 known communists working in the
+    State Department. The Red Scare enters a new and dangerous phase.
+  conditions:
+    - figure_active: mccarthy
+  narrative: >
+    "I have here in my hand a list." The Senator waves a piece of paper at the
+    crowd in Wheeling and the Republic is altered. No one checks the number.
+    No one asks to see the list. The Air Force budget office quietly notes that
+    the Senator's rhetoric has made the Joint Chiefs' supplemental appropriations
+    request considerably easier to justify. Fear, it turns out, is an excellent
+    budget tool. LeMay did not orchestrate this. He did not need to.
+  outcomes:
+    meters:
+      - name: soviet_threat_perception
+        delta: 20
+      - name: defense_budget_share
+        delta: 10
+      - name: civilian_oversight
+        delta: -5
+      - name: public_support
+        delta: -8
+    figure_stat_changes:
+      - figure: mccarthy
+        stat: public_influence
+        delta: 15
+  divergence: null
+  once: true
+
+- id: korea_stalemate_1951
+  year: 1951
+  era: birth_of_usaf
+  title: "The Stalemate Begins"
+  description: >
+    General MacArthur is fired by Truman for insubordination. The Korean War
+    grinds into a bloody stalemate near the 38th parallel. LeMay's targeting
+    requests are repeatedly denied. The military begins learning to work around
+    civilian restrictions rather than through them.
+  conditions:
+    - figure_active: truman
+    - figure_active: lemay
+  narrative: >
+    MacArthur is gone. The lesson every general draws is not "do not defy the
+    President." The lesson is: "do not defy the President publicly." Private
+    defiance, bureaucratic obstruction, selectively incomplete intelligence
+    reports — these are safer instruments. The military begins developing an
+    institutional vocabulary for these tools. They do not call it deception.
+    They call it operational security.
+  outcomes:
+    meters:
+      - name: civilian_oversight
+        delta: -8
+      - name: information_monopoly
+        delta: 8
+      - name: escalation_risk
+        delta: -5
+      - name: public_support
+        delta: -10
+  divergence: null
+  once: true

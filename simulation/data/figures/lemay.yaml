@@ -1,0 +1,24 @@
+id: lemay
+name: "Curtis E. LeMay"
+role: "General, Commander of Strategic Air Command"
+faction: military
+active_years: [1947, 1968]
+traits:
+  - iron_discipline
+  - nuclear_hawk
+  - bureaucratic_warrior
+  - contempt_for_politicians
+  - chain_smoker
+stats:
+  aggression: 95
+  pragmatism: 85
+  political_skill: 40
+  public_influence: 60
+relationships:
+  mcnamara: -90
+  truman: -55
+  eisenhower: 35
+  mccarthy: 20
+  johnson: -75
+  reagan: 50
+decision_logic: hawk

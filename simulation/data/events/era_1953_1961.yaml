@@ -1,0 +1,207 @@
+# Era 2: McCarthy, Eisenhower, the MIC warning (1953–1961)
+# 6 events: Korean armistice, McCarthy's fall, Radulovich case, bomber gap,
+# Sputnik, and Eisenhower's farewell MIC warning.
+
+- id: korea_armistice_1953
+  year: 1953
+  era: eisenhower_era
+  title: "Korean Armistice — The War Nobody Won"
+  description: >
+    The Korean War ends in an armistice on July 27, 1953, restoring the border
+    roughly where it was before the war. 36,000 Americans are dead. The war
+    is declared neither a victory nor a defeat. The military uses the outcome
+    to argue that civilian restrictions prevented victory.
+  conditions:
+    - figure_active: eisenhower
+  narrative: >
+    The armistice is signed at 10:01 AM. There is no surrender ceremony.
+    There are no parades. Within a week, the Joint Chiefs have circulated an
+    internal analysis arguing that the war was lost not on the battlefield
+    but in Washington — in the decision not to bomb Chinese supply lines,
+    not to authorise nuclear use, not to allow the military to fight without
+    its hands tied. The analysis is classified. Its conclusions spread through
+    the officer corps like a gospel. The Crisis Ratchet clicks again.
+  outcomes:
+    meters:
+      - name: public_support
+        delta: -12
+      - name: civilian_oversight
+        delta: -7
+      - name: information_monopoly
+        delta: 5
+      - name: escalation_risk
+        delta: -10
+  divergence: null
+  once: true
+
+- id: milo_radulovich_1953
+  year: 1953
+  era: eisenhower_era
+  title: "The Radulovich Case — The Air Force Purges Its Own"
+  description: >
+    Lieutenant Milo Radulovich is discharged from the Air Force Reserve not
+    for anything he did, but because his father and sister are suspected of
+    having communist sympathies. The case becomes a national scandal.
+  conditions:
+    - figure_active: mccarthy
+  narrative: >
+    Milo Radulovich has never done anything wrong. He is a meteorology officer
+    from Michigan. His father reads a Serbian-language newspaper. His sister
+    signed a petition. The Air Force is too frightened of McCarthy to protect
+    its own officer. Edward R. Murrow puts the case on television. The Air Force
+    quietly reverses the discharge six weeks later — after the cameras leave.
+    It is a small victory for due process and a large victory for the principle
+    that political fear will always win if the television cameras are not watching.
+    LeMay is furious. Not about the injustice. About losing a trained officer.
+  outcomes:
+    meters:
+      - name: civilian_oversight
+        delta: -4
+      - name: public_support
+        delta: -6
+      - name: information_monopoly
+        delta: 3
+    figure_stat_changes:
+      - figure: mccarthy
+        stat: public_influence
+        delta: -10
+  divergence: null
+  once: true
+
+- id: mccarthy_fall_1954
+  year: 1954
+  era: eisenhower_era
+  title: "Have You No Sense of Decency?"
+  description: >
+    The Army-McCarthy hearings are televised. Attorney Joseph Welch's famous
+    rebuke — "Have you no sense of decency, sir?" — breaks McCarthy's public
+    support. The Senate votes to censure him in December. McCarthy's power
+    collapses. The military breathes a cautious sigh of relief.
+  conditions:
+    - figure_active: mccarthy
+    - figure_active: eisenhower
+  narrative: >
+    McCarthy has made the mistake of attacking the Army on television. The
+    Army's counsel, a small man with wire-rimmed glasses named Joseph Welch,
+    looks directly at the Senator and asks a question that 20 million Americans
+    hear at the same time. McCarthy's approval rating falls off a cliff. He is
+    censured in December. He dies of liver failure three years later, still a
+    Senator, largely ignored. The Air Force immediately reviews its loyalty
+    discharge decisions. Several dozen officers are quietly reinstated, their
+    records carefully amended to remove any trace of the process that removed them.
+  outcomes:
+    meters:
+      - name: soviet_threat_perception
+        delta: -10
+      - name: civilian_oversight
+        delta: 5
+      - name: public_support
+        delta: 8
+    figure_stat_changes:
+      - figure: mccarthy
+        stat: public_influence
+        delta: -30
+  divergence: null
+  once: true
+
+- id: bomber_gap_1956
+  year: 1956
+  era: eisenhower_era
+  title: "The Bomber Gap — The First Manufactured Crisis"
+  description: >
+    Air Force intelligence reports claim the Soviet Union is producing strategic
+    bombers at a rate that will soon give them decisive superiority. The CIA
+    later determines the claims are grossly inflated. But the budget requests
+    have already been approved.
+  conditions:
+    - figure_active: lemay
+    - figure_active: eisenhower
+  narrative: >
+    The Air Force presents Eisenhower with reconnaissance photographs of the
+    Tushino Airshow. Soviet bombers fly past in formation — the same six planes
+    looping back around again and again. Intelligence analysts count them as
+    individual aircraft. The "bomber gap" is born. Eisenhower knows the
+    photographs are suspect. He has been reading U-2 overflight data for months.
+    The Soviets have far fewer bombers than claimed. But he cannot say this
+    without exposing the U-2 program. He approves the supplemental budget request.
+    The Air Force has just learned something important: classified intelligence
+    cannot be contradicted by anyone outside the classification.
+  outcomes:
+    meters:
+      - name: defense_budget_share
+        delta: 12
+      - name: information_monopoly
+        delta: 10
+      - name: economic_dependence
+        delta: 8
+      - name: civilian_oversight
+        delta: -6
+  divergence: null
+  once: true
+
+- id: sputnik_1957
+  year: 1957
+  era: eisenhower_era
+  title: "Sputnik — The Sky Is No Longer Ours"
+  description: >
+    On October 4, 1957, the Soviet Union launches Sputnik 1 into orbit.
+    The implications for nuclear delivery are immediate and terrifying to
+    the American public and Congress. The Air Force uses the panic to
+    massively accelerate its ICBM programs.
+  conditions:
+    - figure_active: eisenhower
+  narrative: >
+    At 7:28 PM Moscow time, a small metallic sphere the size of a beach ball
+    begins bleeping from low Earth orbit. In living rooms across America,
+    families stand outside in the dark and look up. The satellite passes over
+    Washington, DC every ninety-six minutes. It is a 184-pound announcement
+    that the Soviets can put nuclear warheads anywhere on the planet.
+    The Air Force budget request for FY1959 is already written. The Sputnik
+    figures are simply inserted where the old numbers were. Congress approves
+    everything. The economic dependence deepens.
+  outcomes:
+    meters:
+      - name: soviet_threat_perception
+        delta: 25
+      - name: escalation_risk
+        delta: 15
+      - name: defense_budget_share
+        delta: 15
+      - name: economic_dependence
+        delta: 10
+      - name: civilian_oversight
+        delta: -8
+  divergence: null
+  once: true
+
+- id: eisenhower_farewell_1961
+  year: 1961
+  era: eisenhower_era
+  title: "Eisenhower's Farewell Warning"
+  description: >
+    On January 17, 1961, three days before leaving office, President Eisenhower
+    delivers his farewell address and warns the American people about the
+    Military-Industrial Complex — the dangerous fusion of the military
+    establishment and the defense industry, which now constitutes a permanent
+    lobby with its own political power.
+  conditions:
+    - figure_active: eisenhower
+  narrative: >
+    Eisenhower spent two terms adding to the very apparatus he is now warning
+    against. He knows this. The speech is more confession than policy. "In the
+    councils of government, we must guard against the acquisition of unwarranted
+    influence, whether sought or unsought, by the military-industrial complex."
+    The generals watch the address from the Pentagon. LeMay, already retired
+    from SAC command, watches it from his study and considers it the most naive
+    thing he has ever heard a President say. You do not warn people about
+    the weather, he believes. You fly in it or you don't.
+  outcomes:
+    meters:
+      - name: civilian_oversight
+        delta: 3
+      - name: public_support
+        delta: 5
+      - name: economic_dependence
+        delta: -2
+  divergence: null
+  once: true

@@ -1,0 +1,210 @@
+# Era 5: Reagan buildup, SDI, Gorbachev, and the Cold War's end (1980–1991)
+# 6 events covering the Reagan buildup, SDI, Iran-Contra, Goldwater-Nichols,
+# Gorbachev's reforms, and the Cold War's end — the final state of the
+# simulation.
+
+- id: reagan_buildup_1981
+  year: 1981
+  era: reagan_era
+  title: "The 600-Ship Navy and the $2 Trillion Buildup"
+  description: >
+    President Reagan launches the largest peacetime military buildup in U.S.
+    history. The defense budget nearly doubles over five years. B-1 bombers
+    are restarted, MX missiles are deployed, and the military-industrial
+    complex reaches a scale that makes the Eisenhower-era warnings seem quaint.
+  conditions:
+    - figure_active: reagan
+  narrative: >
+    The Reagan budget lands on Capitol Hill like an artillery barrage. The
+    numbers are unprecedented: a 40 percent increase in defense spending over
+    five years, $1.46 trillion in total. Defense contractors in forty-three
+    states hire overnight. The economic dependence that Eisenhower warned
+    about in 1961 has now become the actual structure of the American economy.
+    You cannot cut this budget without putting congressional districts
+    out of work. The military does not need to lobby anymore. The economy
+    lobbies for it.
+  outcomes:
+    meters:
+      - name: defense_budget_share
+        delta: 18
+      - name: economic_dependence
+        delta: 15
+      - name: sac_readiness
+        delta: 15
+      - name: soviet_threat_perception
+        delta: 10
+      - name: civilian_oversight
+        delta: -8
+  divergence: null
+  once: true
+
+- id: sdi_announcement_1983
+  year: 1983
+  era: reagan_era
+  title: "Star Wars — The Complexity Trap Perfected"
+  description: >
+    Reagan announces the Strategic Defense Initiative (SDI) in a televised
+    address. The system — a space-based missile defense shield — is so
+    technically complex that no civilian official can evaluate whether it
+    is feasible. The Pentagon spends $30 billion on research over the decade.
+    It does not produce a working system. The budget is never clawed back.
+  conditions:
+    - figure_active: reagan
+  narrative: >
+    The President reads from a notecard on national television. "What if free
+    people could live secure in the knowledge that we could intercept and
+    destroy strategic ballistic missiles before they reached our soil?"
+    In the Pentagon, the Secretary of Defense does not know whether this is
+    physically possible. His science advisor says probably not with 1980s
+    technology. His procurement officers are already drafting contracts.
+    The project cannot be killed because to kill it would be to "weaken
+    deterrence." The complexity of the technology has become its own form
+    of protection from oversight. This is the Complexity Trap at its purest.
+  outcomes:
+    meters:
+      - name: information_monopoly
+        delta: 12
+      - name: economic_dependence
+        delta: 10
+      - name: defense_budget_share
+        delta: 8
+      - name: civilian_oversight
+        delta: -10
+      - name: escalation_risk
+        delta: 10
+  divergence: null
+  once: true
+
+- id: iran_contra_1986
+  year: 1986
+  era: reagan_era
+  title: "Iran-Contra — The State Within the State Revealed"
+  description: >
+    The Iran-Contra affair is revealed: NSC staff ran an illegal covert
+    operation to sell weapons to Iran and fund Nicaraguan rebels, bypassing
+    both Congress and formal civilian oversight. Key military and intelligence
+    figures are indicted. Most convictions are later overturned.
+  conditions:
+    - figure_active: reagan
+  narrative: >
+    The Congressional hearings reveal that a Marine lieutenant colonel named
+    Oliver North ran a shadow foreign policy from a White House basement office,
+    funded by weapons sales to a country the United States publicly refused
+    to arm. He shredded documents when investigators arrived. He was decorated
+    by the President. He runs for Senate after his conviction is overturned.
+    The Church Committee reforms, painstakingly assembled a decade earlier,
+    were routed around so completely that investigators cannot determine when
+    the routing began. The black budget, the off-books operation, the
+    parallel chain of command — these are not aberrations. They are the system.
+  outcomes:
+    meters:
+      - name: civilian_oversight
+        delta: -12
+      - name: information_monopoly
+        delta: 8
+      - name: public_support
+        delta: -10
+  divergence: null
+  once: true
+
+- id: goldwater_nichols_1986
+  year: 1986
+  era: reagan_era
+  title: "Goldwater-Nichols — The Military Reorganises on Its Own Terms"
+  description: >
+    The Goldwater-Nichols Department of Defense Reorganization Act dramatically
+    restructures the military chain of command. It is the most significant
+    Pentagon reorganisation since 1947. Civilian officials largely accept
+    the military's preferred structure without modification.
+  conditions:
+    - figure_active: reagan
+  narrative: >
+    The Act passes with overwhelming bipartisan support. Congress is told it
+    will improve military effectiveness and reduce inter-service rivalry.
+    Both are true. What is not widely noted is that the Act effectively
+    concentrates operational command in the regional Combatant Commanders —
+    the CINCs — who report through the Chairman of the Joint Chiefs, bypassing
+    the individual service secretaries who are civilian appointees. The civilian
+    layer of oversight has been thinned. No one on the Hill describes it
+    this way. The CINCs, within a decade, will have more independent operational
+    authority than any military commanders since MacArthur.
+  outcomes:
+    meters:
+      - name: civilian_oversight
+        delta: -8
+      - name: information_monopoly
+        delta: 5
+      - name: sac_readiness
+        delta: 10
+  divergence: null
+  once: true
+
+- id: gorbachev_reforms_1988
+  year: 1988
+  era: reagan_era
+  title: "Gorbachev Blinks — The Soviet System Cracks"
+  description: >
+    Mikhail Gorbachev's glasnost and perestroika reforms have destabilised
+    the Soviet economy and political structure. U.S. intelligence agencies
+    begin reporting that the Soviet threat may be structurally declining.
+    The Pentagon resists reducing the defense budget.
+  conditions:
+    - figure_active: reagan
+  narrative: >
+    The CIA's assessment is cautious: Soviet military spending is unsustainable,
+    but the military is the last institution in the USSR that still functions.
+    The Defense Intelligence Agency disagrees and argues Soviet capabilities
+    remain at peak. Congress asks which assessment is correct. Both agencies
+    cite classified sources that cannot be released. The defense budget
+    appropriations go forward as written. Reagan signs them without question.
+    The Cold War is ending, but the apparatus built to fight it has its own
+    momentum now. It does not know how to stop.
+  outcomes:
+    meters:
+      - name: soviet_threat_perception
+        delta: -15
+      - name: escalation_risk
+        delta: -15
+      - name: civilian_oversight
+        delta: 3
+      - name: economic_dependence
+        delta: 5
+  divergence: null
+  once: true
+
+- id: cold_war_ends_1991
+  year: 1991
+  era: reagan_era
+  title: "The Soviet Union Dissolves"
+  description: >
+    On December 25, 1991, the Soviet flag is lowered over the Kremlin for
+    the last time and replaced with the Russian tricolor. The Cold War is over.
+    The United States has won. The military establishment that won it is
+    larger, more autonomous, more technologically opaque, and more economically
+    embedded in civilian society than at any point in history. Civilian
+    oversight exists in name only.
+  conditions: []
+  narrative: >
+    Mikhail Gorbachev signs the document dissolving the Union of Soviet
+    Socialist Republics and resigns the Presidency of a country that no
+    longer exists. It is a Sunday. George H.W. Bush is at Camp David.
+    He does not make a victory speech. He is, by all accounts, privately
+    somber. He understands that the apparatus built to fight the Cold War
+    will not simply dismantle itself now that the war is over. The defense
+    contractors are in forty-three states. The black budget is intact.
+    The Combatant Commanders have their operational authority. The FISA
+    Court issues warrants in secret. The NSA collects everything. Civilian
+    oversight is a courtesy extended by the military to the politicians,
+    revocable at any time the politicians become inconvenient.
+    LeMay has been dead for three years. He would have called this a victory.
+    He would have been right.
+  outcomes:
+    meters:
+      - name: escalation_risk
+        delta: -20
+      - name: soviet_threat_perception
+        delta: -30
+      - name: civilian_oversight
+        delta: -5
+  divergence: null
+  once: true

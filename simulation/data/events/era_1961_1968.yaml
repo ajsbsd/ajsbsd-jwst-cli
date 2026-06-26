@@ -1,0 +1,229 @@
+# Era 3: McNamara, Flexible Response, Cuba, Vietnam (1961–1968)
+# 7 events covering the Bay of Pigs, McNamara's systems analysis, Cuban Missile
+# Crisis, LeMay's forced retirement, Gulf of Tonkin, Rolling Thunder, and Tet.
+
+- id: mcnamara_takes_over_1961
+  year: 1961
+  era: mcnamara_era
+  title: "McNamara Arrives with a Spreadsheet"
+  description: >
+    Robert McNamara is confirmed as Secretary of Defense. He immediately
+    begins applying Ford Motor Company management principles to the Pentagon,
+    introducing "systems analysis" to determine military spending priorities.
+    LeMay is openly contemptuous.
+  conditions:
+    - figure_active: mcnamara
+    - figure_active: lemay
+  narrative: >
+    McNamara walks into the Pentagon with twelve Harvard-educated analysts and
+    a methodology for measuring everything. He can tell you the cost per
+    tactical nuclear sortie. He can tell you the optimal bomb tonnage per
+    square kilometer of industrial target. He cannot tell you what it feels
+    like to watch a B-29 crew burn to death over Ploesti. LeMay sits across
+    the table from him and says nothing for most of the first briefing.
+    "He thinks he can win wars with mathematics," LeMay tells an aide afterward.
+    "He has never lost anyone."
+  outcomes:
+    meters:
+      - name: civilian_oversight
+        delta: 8
+      - name: information_monopoly
+        delta: -5
+      - name: escalation_risk
+        delta: -5
+    figure_stat_changes:
+      - figure: mcnamara
+        stat: political_skill
+        delta: 10
+      - figure: lemay
+        stat: political_skill
+        delta: -5
+  divergence: null
+  once: true
+
+- id: cuban_missile_crisis_1962
+  year: 1962
+  era: mcnamara_era
+  title: "Thirteen Days — The World Holds Its Breath"
+  description: >
+    Soviet nuclear missiles are discovered in Cuba. LeMay, as Air Force Chief
+    of Staff, advocates immediate massive airstrikes. Kennedy chooses a naval
+    blockade. Over thirteen days, the world comes closer to nuclear war than
+    at any other point in history.
+  conditions:
+    - figure_active: lemay
+    - figure_active: mcnamara
+  narrative: >
+    LeMay lays out his proposal at the ExComm table: 1,080 sorties in the
+    first day, targeting all known missile sites, airfields, and SAM batteries.
+    "We'd take out everything," he tells Kennedy. "Absolute minimum casualties
+    on our side." Kennedy asks what happens next. LeMay doesn't answer because
+    he considers "what happens next" a political question, not a military one.
+    Kennedy chooses the blockade. The crisis resolves. Khrushchev backs down.
+    LeMay walks out of the final ExComm meeting and tells colleagues it was
+    "the greatest defeat in our history." He means it. The message sent to Moscow,
+    in his view, was: we will flinch.
+  outcomes:
+    meters:
+      - name: escalation_risk
+        delta: 25
+      - name: civilian_oversight
+        delta: -10
+      - name: public_support
+        delta: -8
+      - name: soviet_threat_perception
+        delta: 20
+    figure_stat_changes:
+      - figure: lemay
+        stat: aggression
+        delta: 5
+  divergence: cuba_airstrikes_1962
+  once: true
+
+- id: lemay_forced_out_1965
+  year: 1965
+  era: mcnamara_era
+  title: "LeMay Is Retired — McNamara Wins the Bureaucratic War"
+  description: >
+    General Curtis LeMay is effectively forced into retirement as Air Force
+    Chief of Staff. McNamara has systematically defunded the manned bomber
+    fleet, shifted the nuclear deterrent to ICBMs, and frozen LeMay out of
+    every major procurement decision. LeMay runs for Vice President on George
+    Wallace's ticket in 1968.
+  conditions:
+    - figure_active: lemay
+    - figure_active: mcnamara
+  narrative: >
+    LeMay files his retirement papers and clears out his desk at the Pentagon.
+    He takes nothing except a cigar cutter and a photograph of a B-29 over
+    the Pacific. McNamara sends a polite note. LeMay does not respond.
+    In his memoir, LeMay will write: "I was not fired because I was wrong.
+    I was fired because I was right about everything, and a man who is right
+    about everything in Washington is the most dangerous thing alive."
+    The machine he built — SAC, the nuclear triad, the doctrine of
+    overwhelming deterrence — will run for another thirty years without him.
+    It will not need him.
+  outcomes:
+    meters:
+      - name: civilian_oversight
+        delta: 5
+      - name: sac_readiness
+        delta: -8
+      - name: information_monopoly
+        delta: 8
+    figure_stat_changes:
+      - figure: lemay
+        stat: public_influence
+        delta: -15
+  divergence: null
+  once: true
+
+- id: gulf_of_tonkin_1964
+  year: 1964
+  era: mcnamara_era
+  title: "Gulf of Tonkin — The Report That Started a War"
+  description: >
+    The Johnson administration reports that North Vietnamese gunboats attacked
+    U.S. destroyers in the Gulf of Tonkin on August 4, 1964. The attack almost
+    certainly did not happen. Congress passes the Gulf of Tonkin Resolution,
+    giving the President blanket authority to conduct military operations
+    in Southeast Asia without a declaration of war.
+  conditions:
+    - figure_active: johnson
+    - figure_active: mcnamara
+  narrative: >
+    Secretary McNamara tells Congress the attack is confirmed. Signals
+    intelligence reports are ambiguous — the NSA analysts who processed the
+    intercepts note privately that the August 4 "attack" was likely a misread
+    of radar returns caused by nervous sonar operators. McNamara is told this.
+    He does not tell Congress. The Resolution passes 416 to 0 in the House
+    and 88 to 2 in the Senate. The information monopoly has just been used,
+    for the first time at full scale, to take the country to war.
+  outcomes:
+    meters:
+      - name: information_monopoly
+        delta: 15
+      - name: civilian_oversight
+        delta: -10
+      - name: escalation_risk
+        delta: 20
+      - name: public_support
+        delta: -5
+    figure_stat_changes:
+      - figure: mcnamara
+        stat: political_skill
+        delta: 5
+  divergence: null
+  once: true
+
+- id: rolling_thunder_begins_1965
+  year: 1965
+  era: mcnamara_era
+  title: "Rolling Thunder — Gradualism as Doctrine"
+  description: >
+    Operation Rolling Thunder begins. McNamara and Johnson personally select
+    specific bombing targets from the White House basement each Tuesday,
+    refusing to authorise strikes on Hanoi's port facilities, Chinese
+    border areas, or SAM sites under construction. LeMay calls it "bombing
+    for appearances, not results."
+  conditions:
+    - figure_active: mcnamara
+    - figure_active: johnson
+  narrative: >
+    The targeting list arrives in the briefing room each Tuesday morning. It
+    lists approved targets, prohibited zones, and required bomb damage assessment
+    intervals. Air Force pilots call the prohibited zones "the sanctuaries."
+    The enemy builds their SAM batteries inside the sanctuaries, knowing the
+    Americans will not touch them until construction is complete. Rolling Thunder
+    will run for three years, drop more ordnance than the entire Pacific theater
+    of World War II, and achieve none of its stated objectives. McNamara's
+    systems analysts will produce monthly progress reports showing positive
+    trends in every metric. The war will be getting better, on paper, until
+    the day it ends.
+  outcomes:
+    meters:
+      - name: information_monopoly
+        delta: 12
+      - name: civilian_oversight
+        delta: -8
+      - name: escalation_risk
+        delta: 10
+      - name: public_support
+        delta: -12
+      - name: economic_dependence
+        delta: 8
+  divergence: vietnam_unrestricted_1965
+  once: true
+
+- id: tet_offensive_1968
+  year: 1968
+  era: mcnamara_era
+  title: "Tet — The Metrics Lie"
+  description: >
+    On January 30, 1968, North Vietnamese forces simultaneously attack 108
+    cities and towns across South Vietnam during the Tet holiday ceasefire.
+    The military had been reporting that the enemy was near collapse. The
+    attack makes those reports impossible to defend.
+  conditions:
+    - figure_active: johnson
+  narrative: >
+    The attack begins at 2:47 AM in Saigon. By morning, enemy commandos have
+    penetrated the U.S. Embassy compound. The American public had been told
+    for years that the war was being won. They are watching it on television.
+    McNamara has already resigned. Johnson will not seek re-election.
+    The information monopoly has broken, briefly, in full public view.
+    It will be repaired. It always is. But the public will not fully trust
+    the military's numbers again for a generation. This is, in the long run,
+    not as limiting a constraint as it should be.
+  outcomes:
+    meters:
+      - name: public_support
+        delta: -20
+      - name: civilian_oversight
+        delta: -5
+      - name: information_monopoly
+        delta: -8
+      - name: escalation_risk
+        delta: -5
+  divergence: null
+  once: true

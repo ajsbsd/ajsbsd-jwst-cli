@@ -1,0 +1,22 @@
+id: truman
+name: "Harry S. Truman"
+role: "President of the United States"
+faction: political
+active_years: [1947, 1953]
+traits:
+  - cold_warrior
+  - fiscal_hawk
+  - civilian_supremacy_believer
+  - decisive_under_pressure
+stats:
+  aggression: 50
+  pragmatism: 70
+  political_skill: 75
+  public_influence: 65
+relationships:
+  lemay: -55
+  mccarthy: -80
+  eisenhower: 30
+  mcnamara: 0
+  johnson: 40
+decision_logic: pragmatist

@@ -1,0 +1,54 @@
+id: korea_nuclear_1951
+trigger_year: 1951
+trigger_conditions:
+  - meter: escalation_risk
+    op: gt
+    value: 75
+  - meter: civilian_oversight
+    op: lt
+    value: 50
+branch_narrative: >
+  The political restraints have collapsed. General LeMay has his authorisation.
+  The B-29s are already loaded and turning at Kadena Air Base, Okinawa.
+  Their targets are the Yalu River bridges and the Manchurian rail yards
+  that have been feeding North Korean forces for eight months. Truman
+  could have stopped this. He did not.
+branch_events:
+  - year: 1951
+    title: "Nuclear Strike on Manchurian Supply Lines"
+    narrative: >
+      Three B-29s lift off from Kadena at 0200 hours carrying Mark 4 nuclear
+      bombs. By dawn, the Yalu River crossings at Sinuiju and Manpojin no
+      longer exist. Chinese logistics have been severed. The strike is
+      reported to Truman as a "conventional precision bombing operation"
+      in the initial cable. The correction arrives twelve hours later.
+      Mao Zedong is informed at 0900 Beijing time.
+    outcomes:
+      meters:
+        - name: escalation_risk
+          delta: 40
+        - name: civilian_oversight
+          delta: -30
+        - name: soviet_threat_perception
+          delta: 50
+        - name: public_support
+          delta: -20
+  - year: 1952
+    title: "China Mobilises — The War Expands"
+    narrative: >
+      China deploys 600,000 troops to the Yalu and requests Soviet air support.
+      Stalin authorises Soviet MiG-15 squadrons to fly combat missions over
+      North Korea. The war is no longer a limited conflict.
+      The Joint Chiefs present the President with three options.
+      All three involve nuclear weapons.
+    outcomes:
+      meters:
+        - name: escalation_risk
+          delta: 30
+        - name: sac_readiness
+          delta: 10
+        - name: defense_budget_share
+          delta: 20
+        - name: civilian_oversight
+          delta: -20
+ending: ww3_1952

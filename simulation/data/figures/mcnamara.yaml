@@ -1,0 +1,23 @@
+id: mcnamara
+name: "Robert S. McNamara"
+role: "Secretary of Defense"
+faction: civilian
+active_years: [1961, 1968]
+traits:
+  - whiz_kid
+  - systems_analyst
+  - gradual_escalation_architect
+  - metrics_obsessed
+  - flexible_response_doctrine
+stats:
+  aggression: 40
+  pragmatism: 70
+  political_skill: 65
+  public_influence: 55
+relationships:
+  lemay: -90
+  johnson: 70
+  eisenhower: 0
+  truman: 0
+  mccarthy: -40
+decision_logic: pragmatist
