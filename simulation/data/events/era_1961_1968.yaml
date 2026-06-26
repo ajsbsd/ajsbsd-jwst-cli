@@ -1,6 +1,6 @@
 # Era 3: McNamara, Flexible Response, Cuba, Vietnam (1961–1968)
-# 7 events covering the Bay of Pigs, McNamara's systems analysis, Cuban Missile
-# Crisis, LeMay's forced retirement, Gulf of Tonkin, Rolling Thunder, and Tet.
+# 7 events covering McNamara's systems analysis, Cuban Missile Crisis,
+# LeMay's forced retirement, Gulf of Tonkin, Rolling Thunder, and Tet.
 
 - id: mcnamara_takes_over_1961
   year: 1961
@@ -26,11 +26,11 @@
   outcomes:
     meters:
       - name: civilian_oversight
-        delta: 8
+        delta: 7
       - name: information_monopoly
-        delta: -5
+        delta: -4
       - name: escalation_risk
-        delta: -5
+        delta: -4
     figure_stat_changes:
       - figure: mcnamara
         stat: political_skill
@@ -66,13 +66,13 @@
   outcomes:
     meters:
       - name: escalation_risk
-        delta: 25
+        delta: 15
       - name: civilian_oversight
-        delta: -10
+        delta: -6
       - name: public_support
-        delta: -8
+        delta: -5
       - name: soviet_threat_perception
-        delta: 20
+        delta: 12
     figure_stat_changes:
       - figure: lemay
         stat: aggression
@@ -108,9 +108,9 @@
       - name: civilian_oversight
         delta: 5
       - name: sac_readiness
-        delta: -8
+        delta: -6
       - name: information_monopoly
-        delta: 8
+        delta: 5
     figure_stat_changes:
       - figure: lemay
         stat: public_influence
@@ -142,13 +142,13 @@
   outcomes:
     meters:
       - name: information_monopoly
-        delta: 15
+        delta: 12
       - name: civilian_oversight
-        delta: -10
+        delta: -7
       - name: escalation_risk
-        delta: 20
+        delta: 12
       - name: public_support
-        delta: -5
+        delta: -4
     figure_stat_changes:
       - figure: mcnamara
         stat: political_skill
@@ -183,15 +183,15 @@
   outcomes:
     meters:
       - name: information_monopoly
-        delta: 12
-      - name: civilian_oversight
-        delta: -8
-      - name: escalation_risk
-        delta: 10
-      - name: public_support
-        delta: -12
-      - name: economic_dependence
         delta: 8
+      - name: civilian_oversight
+        delta: -5
+      - name: escalation_risk
+        delta: 6
+      - name: public_support
+        delta: -8
+      - name: economic_dependence
+        delta: 6
   divergence: vietnam_unrestricted_1965
   once: true
 
@@ -218,12 +218,12 @@
   outcomes:
     meters:
       - name: public_support
-        delta: -20
+        delta: -10
       - name: civilian_oversight
-        delta: -5
+        delta: -4
       - name: information_monopoly
-        delta: -8
+        delta: -6
       - name: escalation_risk
-        delta: -5
+        delta: -4
   divergence: null
   once: true

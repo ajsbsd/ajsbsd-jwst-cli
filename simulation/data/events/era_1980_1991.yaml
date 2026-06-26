@@ -26,15 +26,15 @@
   outcomes:
     meters:
       - name: defense_budget_share
-        delta: 18
+        delta: 6
       - name: economic_dependence
-        delta: 15
-      - name: sac_readiness
-        delta: 15
-      - name: soviet_threat_perception
         delta: 10
+      - name: sac_readiness
+        delta: 12
+      - name: soviet_threat_perception
+        delta: 8
       - name: civilian_oversight
-        delta: -8
+        delta: -6
   divergence: null
   once: true
 
@@ -63,15 +63,15 @@
   outcomes:
     meters:
       - name: information_monopoly
-        delta: 12
-      - name: economic_dependence
-        delta: 10
-      - name: defense_budget_share
         delta: 8
+      - name: economic_dependence
+        delta: 7
+      - name: defense_budget_share
+        delta: 3
       - name: civilian_oversight
-        delta: -10
+        delta: -7
       - name: escalation_risk
-        delta: 10
+        delta: 5
   divergence: null
   once: true
 
@@ -99,11 +99,11 @@
   outcomes:
     meters:
       - name: civilian_oversight
-        delta: -12
+        delta: -8
       - name: information_monopoly
-        delta: 8
+        delta: 6
       - name: public_support
-        delta: -10
+        delta: -4
   divergence: null
   once: true
 
@@ -131,11 +131,11 @@
   outcomes:
     meters:
       - name: civilian_oversight
-        delta: -8
+        delta: -6
       - name: information_monopoly
-        delta: 5
+        delta: 4
       - name: sac_readiness
-        delta: 10
+        delta: 8
   divergence: null
   once: true
 
@@ -162,13 +162,13 @@
   outcomes:
     meters:
       - name: soviet_threat_perception
-        delta: -15
+        delta: -12
       - name: escalation_risk
-        delta: -15
+        delta: -12
       - name: civilian_oversight
         delta: 3
       - name: economic_dependence
-        delta: 5
+        delta: 4
   divergence: null
   once: true
 
@@ -201,10 +201,10 @@
   outcomes:
     meters:
       - name: escalation_risk
-        delta: -20
+        delta: -15
       - name: soviet_threat_perception
-        delta: -30
+        delta: -20
       - name: civilian_oversight
-        delta: -5
+        delta: -4
   divergence: null
   once: true

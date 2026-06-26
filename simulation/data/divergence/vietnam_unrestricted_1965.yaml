@@ -3,10 +3,10 @@ trigger_year: 1965
 trigger_conditions:
   - meter: civilian_oversight
     op: lt
-    value: 40
+    value: 35
   - meter: information_monopoly
     op: gt
-    value: 55
+    value: 70
 branch_narrative: >
   The target approval lists have disappeared from the Tuesday meetings.
   McNamara still holds the meetings. The lists are simply no longer submitted

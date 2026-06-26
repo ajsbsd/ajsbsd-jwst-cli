@@ -3,10 +3,10 @@ trigger_year: 1962
 trigger_conditions:
   - meter: escalation_risk
     op: gt
-    value: 70
+    value: 82
   - meter: civilian_oversight
     op: lt
-    value: 45
+    value: 28
 branch_narrative: >
   Kennedy has left the room. McNamara is arguing for the blockade again.
   LeMay is not arguing anymore. He is simply listing targets, times, and

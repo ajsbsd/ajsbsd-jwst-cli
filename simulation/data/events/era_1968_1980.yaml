@@ -1,6 +1,69 @@
 # Era 4: Nixon, détente, Watergate, SALT, and the hollow military (1968–1980)
-# 5 events covering Vietnam withdrawal, Watergate, the intelligence community
-# oversight hearings (Church Committee), SALT, and the hollow force crisis.
+# 7 events — original 5 plus War Powers Act (1973) and Pentagon Papers (1971)
+# as balancing events that give civilian_oversight meaningful upward pressure.
+
+- id: pentagon_papers_1971
+  year: 1971
+  era: nixon_era
+  title: "The Pentagon Papers — The Lie Is Published"
+  description: >
+    Daniel Ellsberg leaks the classified Pentagon Papers to the New York Times.
+    The documents prove that successive administrations systematically lied to
+    Congress and the public about the Vietnam War's prospects. The Nixon
+    administration attempts to suppress publication and fails.
+  conditions: []
+  narrative: >
+    The New York Times begins publishing on June 13, 1971. The Pentagon Papers
+    are 7,000 pages of classified history documenting how the Truman, Eisenhower,
+    Kennedy, and Johnson administrations all knew the war was not winnable and
+    said otherwise. The information monopoly has been broken by a single man
+    with a photocopier. Nixon obtains a restraining order. The Supreme Court
+    overturns it in fifteen days. The press prints the rest. For a brief period,
+    Congress and the public can see what the military told the civilians and
+    what the civilians told the public. The gap between those two things is
+    the size of a war.
+  outcomes:
+    meters:
+      - name: information_monopoly
+        delta: -8
+      - name: civilian_oversight
+        delta: 7
+      - name: public_support
+        delta: -8
+  divergence: null
+  once: true
+
+- id: war_powers_act_1973
+  year: 1973
+  era: nixon_era
+  title: "The War Powers Resolution — Congress Tries to Take Back the Keys"
+  description: >
+    In the wake of Vietnam, Congress passes the War Powers Resolution over
+    Nixon's veto, requiring the President to notify Congress within 48 hours
+    of committing troops and limiting deployments to 60 days without
+    Congressional authorization. It is the most significant assertion of
+    civilian legislative oversight since WWII.
+  conditions: []
+  narrative: >
+    The Resolution passes by veto-override on November 7, 1973. For one afternoon,
+    civilian oversight is measurably higher than it was the day before.
+    The Joint Chiefs study the text carefully. The 60-day clock, they note,
+    does not begin until the President formally reports the deployment.
+    Presidents begin routinely failing to formally report. The War Powers
+    Resolution will be technically in force for the next fifty years without
+    ever once stopping a war. It is the most successfully ignored law in
+    American history. But the impulse behind it is real, and for a moment
+    it matters.
+  outcomes:
+    meters:
+      - name: civilian_oversight
+        delta: 9
+      - name: information_monopoly
+        delta: -4
+      - name: public_support
+        delta: 6
+  divergence: null
+  once: true
 
 - id: vietnam_withdrawal_1973
   year: 1973
@@ -25,13 +88,13 @@
   outcomes:
     meters:
       - name: public_support
-        delta: -15
+        delta: -6
       - name: civilian_oversight
-        delta: -8
-      - name: information_monopoly
-        delta: 10
-      - name: sac_readiness
         delta: -5
+      - name: information_monopoly
+        delta: 7
+      - name: sac_readiness
+        delta: -4
   divergence: null
   once: true
 
@@ -59,11 +122,11 @@
   outcomes:
     meters:
       - name: civilian_oversight
-        delta: -12
-      - name: public_support
         delta: -8
+      - name: public_support
+        delta: -4
       - name: information_monopoly
-        delta: 6
+        delta: 5
   divergence: null
   once: true
 
@@ -95,7 +158,7 @@
       - name: information_monopoly
         delta: -5
       - name: public_support
-        delta: 5
+        delta: 4
   divergence: null
   once: true
 
@@ -119,15 +182,15 @@
   outcomes:
     meters:
       - name: soviet_threat_perception
-        delta: 20
-      - name: escalation_risk
         delta: 15
-      - name: defense_budget_share
+      - name: escalation_risk
         delta: 10
-      - name: economic_dependence
+      - name: defense_budget_share
         delta: 8
+      - name: economic_dependence
+        delta: 6
       - name: civilian_oversight
-        delta: -5
+        delta: -4
   divergence: null
   once: true
 
@@ -153,12 +216,12 @@
   outcomes:
     meters:
       - name: sac_readiness
-        delta: -10
+        delta: -8
       - name: public_support
-        delta: -10
+        delta: -4
       - name: defense_budget_share
-        delta: 15
+        delta: 6
       - name: civilian_oversight
-        delta: -6
+        delta: -4
   divergence: null
   once: true

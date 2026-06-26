@@ -24,13 +24,13 @@
   outcomes:
     meters:
       - name: public_support
-        delta: -12
+        delta: -8
       - name: civilian_oversight
-        delta: -7
+        delta: -5
       - name: information_monopoly
-        delta: 5
+        delta: 4
       - name: escalation_risk
-        delta: -10
+        delta: -8
   divergence: null
   once: true
 
@@ -56,11 +56,11 @@
   outcomes:
     meters:
       - name: civilian_oversight
-        delta: -4
+        delta: -3
       - name: public_support
-        delta: -6
+        delta: -5
       - name: information_monopoly
-        delta: 3
+        delta: 2
     figure_stat_changes:
       - figure: mccarthy
         stat: public_influence
@@ -92,11 +92,11 @@
   outcomes:
     meters:
       - name: soviet_threat_perception
-        delta: -10
+        delta: -8
       - name: civilian_oversight
-        delta: 5
+        delta: 6
       - name: public_support
-        delta: 8
+        delta: 7
     figure_stat_changes:
       - figure: mccarthy
         stat: public_influence
@@ -129,13 +129,13 @@
   outcomes:
     meters:
       - name: defense_budget_share
-        delta: 12
-      - name: information_monopoly
-        delta: 10
-      - name: economic_dependence
         delta: 8
+      - name: information_monopoly
+        delta: 8
+      - name: economic_dependence
+        delta: 6
       - name: civilian_oversight
-        delta: -6
+        delta: -5
   divergence: null
   once: true
 
@@ -154,23 +154,23 @@
     At 7:28 PM Moscow time, a small metallic sphere the size of a beach ball
     begins bleeping from low Earth orbit. In living rooms across America,
     families stand outside in the dark and look up. The satellite passes over
-    Washington, DC every ninety-six minutes. It is a 184-pound announcement
-    that the Soviets can put nuclear warheads anywhere on the planet.
+    Washington, DC every ninety-six minutes. It is a 184-pound announcement that
+    the Soviets can put nuclear warheads anywhere on the planet.
     The Air Force budget request for FY1959 is already written. The Sputnik
     figures are simply inserted where the old numbers were. Congress approves
     everything. The economic dependence deepens.
   outcomes:
     meters:
       - name: soviet_threat_perception
-        delta: 25
+        delta: 18
       - name: escalation_risk
-        delta: 15
-      - name: defense_budget_share
-        delta: 15
-      - name: economic_dependence
         delta: 10
+      - name: defense_budget_share
+        delta: 10
+      - name: economic_dependence
+        delta: 8
       - name: civilian_oversight
-        delta: -8
+        delta: -5
   divergence: null
   once: true
 
@@ -198,7 +198,7 @@
   outcomes:
     meters:
       - name: civilian_oversight
-        delta: 3
+        delta: 4
       - name: public_support
         delta: 5
       - name: economic_dependence

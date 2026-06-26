@@ -23,7 +23,7 @@
       - name: sac_readiness
         delta: -5
       - name: defense_budget_share
-        delta: 5
+        delta: 4
   divergence: null
   once: true
 
@@ -73,9 +73,9 @@
       value: 40
   narrative: >
     LeMay walks into SAC headquarters and immediately fires three base
-    commanders before dinner. He orders a no-notice simulated bombing run
-    on Dayton, Ohio. Every single crew fails. Every single aircraft misses
-    the target by miles. LeMay is not surprised. He is already writing the
+    commanders before dinner. He orders a no-notice simulated bombing run on
+    Dayton, Ohio. Every single crew fails. Every single aircraft misses the
+    target by miles. LeMay is not surprised. He is already writing the
     regulations that will make failure this catastrophic impossible.
     "This outfit is a disgrace," he tells his staff. "I am going to fix it."
   outcomes:
@@ -83,9 +83,9 @@
       - name: sac_readiness
         delta: 20
       - name: civilian_oversight
-        delta: -5
+        delta: -4
       - name: defense_budget_share
-        delta: 8
+        delta: 6
     figure_stat_changes:
       - figure: lemay
         stat: public_influence
@@ -113,13 +113,13 @@
   outcomes:
     meters:
       - name: soviet_threat_perception
-        delta: 30
+        delta: 22
       - name: escalation_risk
-        delta: 15
-      - name: defense_budget_share
         delta: 12
+      - name: defense_budget_share
+        delta: 8
       - name: civilian_oversight
-        delta: -8
+        delta: -5
   divergence: null
   once: true
 
@@ -146,13 +146,13 @@
   outcomes:
     meters:
       - name: escalation_risk
-        delta: 20
-      - name: civilian_oversight
-        delta: -6
-      - name: soviet_threat_perception
         delta: 15
+      - name: civilian_oversight
+        delta: -4
+      - name: soviet_threat_perception
+        delta: 10
       - name: public_support
-        delta: -5
+        delta: -4
     figure_stat_changes:
       - figure: lemay
         stat: aggression
@@ -180,13 +180,13 @@
   outcomes:
     meters:
       - name: soviet_threat_perception
-        delta: 20
+        delta: 15
       - name: defense_budget_share
-        delta: 10
+        delta: 8
       - name: civilian_oversight
-        delta: -5
+        delta: -4
       - name: public_support
-        delta: -8
+        delta: -6
     figure_stat_changes:
       - figure: mccarthy
         stat: public_influence
@@ -216,12 +216,12 @@
   outcomes:
     meters:
       - name: civilian_oversight
-        delta: -8
-      - name: information_monopoly
-        delta: 8
-      - name: escalation_risk
         delta: -5
+      - name: information_monopoly
+        delta: 6
+      - name: escalation_risk
+        delta: -4
       - name: public_support
-        delta: -10
+        delta: -8
   divergence: null
   once: true
