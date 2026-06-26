@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import random
 from pathlib import Path
-from typing import Optional
+from typing import Dict, List, Optional
 
 from simulation.meters import GlobalMeters
 from simulation.figures import FigureRegistry
@@ -29,6 +29,8 @@ class SimulationEngine:
         seed: Optional[int] = None,
         verbose: bool = False,
         no_color: bool = False,
+        meter_overrides: Optional[Dict[str, int]] = None,
+        force_events: Optional[List[str]] = None,
     ) -> None:
         if seed is not None:
             random.seed(seed)
@@ -41,6 +43,15 @@ class SimulationEngine:
         self.registry = FigureRegistry.load_all(FIGURES_DIR)
         self.event_engine = EventEngine.load_eras(EVENTS_DIR)
         self.divergence_engine = DivergenceEngine.load_all(DIVERGENCE_DIR)
+
+        # Apply meter overrides before the simulation starts
+        if meter_overrides:
+            for name, value in meter_overrides.items():
+                # Set by applying a delta from the current starting value
+                current = self.meters.get(name)
+                self.meters.update(name, value - current)
+
+        self._force_events: List[str] = list(force_events or [])
 
         # Narrative printer (imported here to avoid circular dep)
         from simulation.narrative import NarrativePrinter
@@ -55,6 +66,19 @@ class SimulationEngine:
     def run(self) -> None:
         """Run the full simulation from START_YEAR to END_YEAR."""
         self.printer.print_opening()
+
+        # Fire any forced events before the main loop begins
+        if self._force_events:
+            self.meters.snapshot_previous()
+            for event_id in self._force_events:
+                event = self._find_event(event_id)
+                if event is None:
+                    raise SystemExit(
+                        f"Error: --force-event {event_id!r} not found. "
+                        "Run --list-events to see all event IDs."
+                    )
+                self.printer.print_event(event, START_YEAR)
+                self.event_engine.fire_event(event, self.meters, self.registry)
 
         for year in range(START_YEAR, END_YEAR + 1):
             self._current_year = year
@@ -104,3 +128,10 @@ class SimulationEngine:
         """Handle the WW3 escalation threshold breach."""
         from simulation.divergence import ENDINGS
         self.printer.print_ending(ENDINGS["ww3_nuclear"], year, self.meters)
+
+    def _find_event(self, event_id: str):
+        """Return the Event with *event_id*, or None."""
+        for event in self.event_engine.all_events():
+            if event.id == event_id:
+                return event
+        return None
